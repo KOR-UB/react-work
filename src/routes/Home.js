@@ -8,16 +8,6 @@ class Home extends React.Component {
     isLoading: true,
     movies: [],
   };
-  add = () => {
-    this.setState((current) => ({
-      count: current.count + 1,
-    }));
-  };
-  minus = () => {
-    this.setState((current) => ({
-      count: current.count - 1,
-    }));
-  };
   getMovies = async () => {
     const {
       data: {
