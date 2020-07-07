@@ -1,11 +1,14 @@
 import React from "react";
 import {HashRouter, BrowserRouter, Route} from "react-router-dom";
 import Home from "./routes/Home";
-import MyHome from "./routes/MyHome";
 import About from "./routes/About";
-import AboutMe from "./routes/AboutMe";
 import Detail from "./routes/Detail";
 import Navigation from "./components/Navigation";
+
+import MyHome from "./routes/MyHome";
+import AboutMe from "./routes/AboutMe";
+import Resume from "./routes/Resume";
+import Contact from "./routes/Contact";
 
 function App() {
   return (
@@ -20,7 +23,8 @@ function App() {
         <Navigation />
         <Route path="/" exact={true} component={MyHome} />
         <Route path="/about" component={AboutMe} />
-        {/* <Route path="/movie/:id" component={Detail} /> */}
+        <Route path="/resume" component={Resume} />
+        <Route path="/contact" component={Contact} />
       </HashRouter>
     </>
   );
