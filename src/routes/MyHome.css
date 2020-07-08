@@ -101,7 +101,16 @@ nav a:hover::before {
 .skill-container figure img {
   width: 100px;
   height: 100px;
+  /* animation: test 1s forwards; */
 }
+/* @keyframes test {
+  0% {
+    width: 200px;
+  }
+  100% {
+    width: 100px;
+  }
+} */
 .skill-container figure figcaption {
   margin-top: 8px;
   font-size: 1.1em;
@@ -145,6 +154,7 @@ main {
   object-fit: cover;
   display: none;
 }
+
 .contentBx {
   width: 40%;
   height: 100%;
