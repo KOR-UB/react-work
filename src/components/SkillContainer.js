@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import htmlLogo from "../img/t/HTML5_Badge.svg";
 import cssLogo from "../img/t/css.svg";
 import jsLogo from "../img/t/js.svg";
@@ -9,42 +9,33 @@ import webpackLogo from "../img/t/webpack.png";
 import babelLogo from "../img/t/babel.png";
 
 function SkillContainer() {
+  useEffect(() => {
+    console.log("스킬 컴포넌트가 화면에 나타남");
+    return () => {
+      console.log("스킬 컴포넌트가 화면에서 사라짐");
+    };
+  }, []);
+  const skillAry = [
+    {id: 1, src: htmlLogo, alt: "HTML5 logo", caption: "HTML5"},
+    {id: 2, src: cssLogo, alt: "CSS3 logo", caption: "CSS3"},
+    {id: 3, src: jsLogo, alt: "JavaScript logo", caption: "JavaScript"},
+    {id: 4, src: sassLogo, alt: "Sass logo", caption: "Sass"},
+    {id: 5, src: nodeLogo, alt: "node logo", caption: "node.js"},
+    {id: 6, src: reactLogo, alt: "React logo", caption: "React"},
+    {id: 7, src: webpackLogo, alt: "WebPack logo", caption: "WebPack"},
+    {id: 8, src: babelLogo, alt: "Babel logo", caption: "Babel"},
+  ];
+
   return (
     <section className="skill-container">
       <h2 className="skill-title">Skill</h2>
       <div className="skill-content">
-        <figure>
-          <img src={htmlLogo} alt="HTML5 logo" />
-          <figcaption>HTML5</figcaption>
-        </figure>
-        <figure>
-          <img src={cssLogo} alt="CSS3 logo" />
-          <figcaption>CSS3</figcaption>
-        </figure>
-        <figure>
-          <img src={jsLogo} alt="JavaScript logo" />
-          <figcaption>JavaScript</figcaption>
-        </figure>
-        <figure>
-          <img src={sassLogo} alt="Sass logo" />
-          <figcaption>Sass</figcaption>
-        </figure>
-        <figure>
-          <img src={nodeLogo} alt="node logo" />
-          <figcaption>node.js</figcaption>
-        </figure>
-        <figure>
-          <img src={reactLogo} alt="React logo" />
-          <figcaption>React</figcaption>
-        </figure>
-        <figure>
-          <img src={webpackLogo} alt="WebPack logo" />
-          <figcaption>WebPack</figcaption>
-        </figure>
-        <figure>
-          <img src={babelLogo} alt="babel logo" />
-          <figcaption>Babel</figcaption>
-        </figure>
+        {skillAry.map((item) => (
+          <figure key={item.id}>
+            <img src={item.src} alt={item.alt} />
+            <figcaption>{item.caption}</figcaption>
+          </figure>
+        ))}
       </div>
     </section>
   );
