@@ -1,44 +1,48 @@
-import React from "react";
-
-const User = React.memo(function User({user, onRemove, onToggle }) {
-  const { username, email, id, active } = user;
-
+import React, {useContext} from "react";
+import {UserDispatch} from "./ReducerTest";
+const User = React.memo(function User({user}) {
+  const {username, email, id, active} = user;
+  const dispatch = useContext(UserDispatch);
   return (
     <div>
-      <b style={{
-        color:active ? "green" : "black",
-        cursor: "pointer"
-      }}
-      onClick={() => onToggle(id)}
+      <b
+        style={{
+          color: active ? "green" : "black",
+          cursor: "pointer",
+        }}
+        onClick={() =>
+          dispatch({
+            type: "TOGGLE_USER",
+            id,
+          })
+        }
       >
         {username}
       </b>
       &nbsp;
-    <span>({email})</span>
-    <button onClick={() => onRemove(id)}>삭제</button>
+      <span>({email})</span>
+      <button
+        onClick={() =>
+          dispatch({
+            type: "REMOVE_USER",
+            id,
+          })
+        }
+      >
+        삭제
+      </button>
     </div>
-  )
+  );
 });
 
-function UserList({users, onRemove, onToggle }) {
+function UserList({users}) {
   return (
     <div>
-      {
-        users.map(
-          (user) => (
-            <User 
-              user={user}
-              key={user.id}
-              onRemove={onRemove}
-              onToggle={onToggle}
-            />
-          )
-        )
-      }
+      {users.map((user) => (
+        <User user={user} key={user.id} />
+      ))}
     </div>
-  )
+  );
 }
 
-export default React.memo(
-  UserList,
-  (prevProps, nextProps) => nextProps.users === prevProps.users);
+export default React.memo(UserList);
