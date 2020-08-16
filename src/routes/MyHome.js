@@ -5,13 +5,17 @@ import ProjectContainer from "../components/ProjectContainer";
 // import Hook from "../components/Hook";
 import ReducerTest from "../components/ReducerTest";
 import "./MyHome.css";
+import Palette from "../components/Palette";
+import Scaffolding from "../components/Scaffolding";
 
 function MyHome() {
   return (
     <main>
-      <ReducerTest />
+      {/* <ReducerTest />
       <SkillContainer />
-      <ProjectContainer />
+      <ProjectContainer /> */}
+      <Scaffolding flow="horizontal" />
+      <Palette />
     </main>
   );
 }

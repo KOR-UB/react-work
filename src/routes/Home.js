@@ -11,9 +11,11 @@ class Home extends React.Component {
   getMovies = async () => {
     const {
       data: {
-        data: {movies},
+        data: { movies },
       },
-    } = await axios.get("https://yts-proxy.now.sh/list_movies.json?sort_by=rating");
+    } = await axios.get(
+      "https://yts-proxy.now.sh/list_movies.json?sort_by=rating"
+    );
     this.setState({
       movies,
       isLoading: false,
@@ -23,7 +25,7 @@ class Home extends React.Component {
     this.getMovies();
   }
   render() {
-    const {isLoading, movies} = this.state;
+    const { isLoading, movies } = this.state;
     return (
       <section className="container">
         {isLoading ? (

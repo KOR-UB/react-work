@@ -1,0 +1,27 @@
+@import "../mixin.scss";
+.horizontal {
+  margin-top: 10px;
+  nav {
+    position: relative;
+    width: 100%;
+    @include Flex();
+    #marker {
+      position: absolute;
+      left: 0;
+      bottom: -8px;
+      height: 2px;
+      width: 0;
+      background: #000;
+      transition: 0.5s;
+      border-radius: 4px;
+    }
+    a {
+      position: relative;
+      text-decoration: none;
+      transition: 0.2s;
+      margin: 0 10px;
+      font-size: 1.5em;
+      color: $FuchsiaRose;
+    }
+  }
+}
