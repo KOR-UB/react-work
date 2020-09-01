@@ -1,22 +1,34 @@
 {
   "files": {
-    "main.css": "/react-work/static/css/main.ea612208.chunk.css",
-    "main.js": "/react-work/static/js/main.8ed3b1f0.chunk.js",
-    "main.js.map": "/react-work/static/js/main.8ed3b1f0.chunk.js.map",
+    "main.css": "/react-work/static/css/main.87099102.chunk.css",
+    "main.js": "/react-work/static/js/main.3d708293.chunk.js",
+    "main.js.map": "/react-work/static/js/main.3d708293.chunk.js.map",
     "runtime-main.js": "/react-work/static/js/runtime-main.3ed38988.js",
     "runtime-main.js.map": "/react-work/static/js/runtime-main.3ed38988.js.map",
-    "static/js/2.f179af76.chunk.js": "/react-work/static/js/2.f179af76.chunk.js",
-    "static/js/2.f179af76.chunk.js.map": "/react-work/static/js/2.f179af76.chunk.js.map",
+    "static/js/2.1b4e780b.chunk.js": "/react-work/static/js/2.1b4e780b.chunk.js",
+    "static/js/2.1b4e780b.chunk.js.map": "/react-work/static/js/2.1b4e780b.chunk.js.map",
     "index.html": "/react-work/index.html",
-    "precache-manifest.832d6051c71a0ccad377b6940bd24ea4.js": "/react-work/precache-manifest.832d6051c71a0ccad377b6940bd24ea4.js",
+    "precache-manifest.764ec938163f7176579e4223753f4b35.js": "/react-work/precache-manifest.764ec938163f7176579e4223753f4b35.js",
     "service-worker.js": "/react-work/service-worker.js",
-    "static/css/main.ea612208.chunk.css.map": "/react-work/static/css/main.ea612208.chunk.css.map",
-    "static/js/2.f179af76.chunk.js.LICENSE.txt": "/react-work/static/js/2.f179af76.chunk.js.LICENSE.txt"
+    "static/css/main.87099102.chunk.css.map": "/react-work/static/css/main.87099102.chunk.css.map",
+    "static/js/2.1b4e780b.chunk.js.LICENSE.txt": "/react-work/static/js/2.1b4e780b.chunk.js.LICENSE.txt",
+    "static/media/Figcaption.mp4": "/react-work/static/media/Figcaption.ad4be253.mp4",
+    "static/media/HTML5_Badge.svg": "/react-work/static/media/HTML5_Badge.f618641c.svg",
+    "static/media/YOONYUBI.jpg": "/react-work/static/media/YOONYUBI.fe4ac138.jpg",
+    "static/media/js.svg": "/react-work/static/media/js.d83d916c.svg",
+    "static/media/node.svg": "/react-work/static/media/node.bf77ae60.svg",
+    "static/media/sassLogo.png": "/react-work/static/media/sassLogo.99e95eb0.png",
+    "static/media/tada_feature_01.jpg": "/react-work/static/media/tada_feature_01.708bd64c.jpg",
+    "static/media/tada_feature_02.jpg": "/react-work/static/media/tada_feature_02.3ae73ac4.jpg",
+    "static/media/tada_feature_03.jpg": "/react-work/static/media/tada_feature_03.5fd6378e.jpg",
+    "static/media/tata-basic.jpg": "/react-work/static/media/tata-basic.3e23c11c.jpg",
+    "static/media/hobby.scss": "/react-work/static/media/track1.42d39851.jpeg",
+    "static/media/weather-icons-wind.css": "/react-work/static/media/weathericons-regular-webfont.ecaf8b48.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.3ed38988.js",
-    "static/js/2.f179af76.chunk.js",
-    "static/css/main.ea612208.chunk.css",
-    "static/js/main.8ed3b1f0.chunk.js"
+    "static/js/2.1b4e780b.chunk.js",
+    "static/css/main.87099102.chunk.css",
+    "static/js/main.3d708293.chunk.js"
   ]
 }
