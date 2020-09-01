@@ -1,0 +1,410 @@
+.weather-body {
+  #weather {
+    width: 100%;
+    padding-bottom: 50px;
+  }
+  .forecast {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+  .weather_content {
+    text-align: center;
+    margin: 0 35px;
+    /* height: 140px; */
+    font-size: 2em;
+    /* animation: spin 1s linear infinite; */
+  }
+
+  .weather_content i,
+  .weather_content p {
+    width: 100%;
+  }
+  .weather_content i {
+    font-size: 5em;
+  }
+  .weather_content p {
+    margin: 0;
+  }
+  .weather_content .temp {
+    margin: 35px 0px 10px 0;
+  }
+  .currently {
+    text-align: center;
+    font-size: 2em;
+  }
+  .city_container {
+    width: 100%;
+    text-align: center;
+  }
+  .city_select {
+    margin-top: 30px;
+    text-align: center;
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+  }
+  .currently_btn {
+    border: none;
+    padding: 0.5em 2.2em;
+    cursor: pointer;
+    color: black;
+    background: #fff;
+    margin-left: 30px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    -moz-transition: 0.2s ease-in-out;
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+  }
+  .currently_btn:hover {
+    background: #aaa;
+    color: #fff;
+  }
+  .fas.fa-spinner {
+    animation: spin 1s infinite linear;
+    font-size: 30px;
+  }
+  .weather_article {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+  }
+  .music_article {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: skyblue;
+  }
+  @media (max-width: 1200px) {
+    .weather_content {
+      min-width: 100%;
+      font-size: 1.3em;
+      margin-bottom: 30px;
+      height: 175px;
+    }
+  }
+  /* clcok */
+  font-size: 13px;
+  .clock {
+    text-align: center;
+  }
+  .clock_wrap {
+    width: 80vw;
+    margin: 0 auto;
+  }
+  .clock .comment {
+    margin: 0;
+    margin-top: 50px;
+    font-size: 2vw;
+  }
+  .clock .time {
+    margin: 0.2em;
+    font-size: 7vw;
+  }
+  .clock .date {
+    font-size: 3vw;
+  }
+  .clock i.spinner {
+    animation: spin 1s infinite linear;
+    font-size: 7vw;
+  }
+
+  @media (max-width: 1200px) {
+    .clock_wrap {
+      margin-bottom: 50px;
+    }
+    .clock .comment {
+      font-size: 5vw;
+    }
+    .clock .time {
+      /* margin: 0.2em; */
+      font-size: 15vw;
+    }
+    .clock .date {
+      font-size: 6vw;
+    }
+  }
+
+  @-moz-keyframes spin {
+    from {
+      -moz-transform: rotate(0deg);
+    }
+    to {
+      -moz-transform: rotate(360deg);
+    }
+  }
+  @-webkit-keyframes spin {
+    from {
+      -webkit-transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  @keyframes spin {
+    from {
+      -webkit-transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  @import url("https://fonts.googleapis.com/css2?family=B612+Mono&family=Cutive+Mono&family=Noto+Sans&family=Roboto&display=swap");
+
+  #setting {
+    position: fixed;
+    top: 0;
+    right: 0;
+    color: #fff;
+    font-family: sans-serif;
+    width: 20vw;
+    height: 100vh;
+    background-color: rgba(38, 39, 38, 0.95);
+    padding: 30px;
+    font-family: sans-serif;
+    /* visibility: hidden; */
+    transform: translateX(105%);
+    transition: transform 0.3s;
+  }
+
+  #setting.active {
+    /* visibility: visible; */
+    transform: none;
+  }
+
+  #setting ul li {
+    margin-bottom: 35px;
+  }
+
+  .btn_settingOpen {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    font-size: 40px;
+  }
+
+  p[class$="heading"] {
+    font-size: 25px;
+    font-weight: 900;
+    margin: 0.7em 0;
+  }
+
+  .hoursView_outerToggle {
+    position: relative;
+    vertical-align: middle;
+    width: 50px;
+    height: 22px;
+    background-color: #aaa;
+    border-radius: 20px;
+  }
+
+  .hoursView_innerToggle {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 18px;
+    height: 18px;
+    background-color: #000;
+    border-radius: 50%;
+    transition: transform 0.3s;
+  }
+
+  .isAct.hoursView_outerToggle {
+    background-color: orange;
+  }
+
+  .isAct .hoursView_innerToggle {
+    transform: translateX(28px);
+    background-color: #fff;
+  }
+
+  .item_font select {
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  .item_fontColor input {
+    border-radius: 5px;
+    height: 40px;
+    width: 33.33%;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+
+  .container_bgc {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .item_backgroundColor input {
+    display: none;
+  }
+
+  .item_backgroundColor label {
+    position: relative;
+    width: 33.33%;
+    height: 40px;
+    border: 1px solid #f1f1f1;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+
+  label[for="bgc_2"],
+  label[for="bgc_5"],
+  label[for="bgc_8"] {
+    border-right: 0;
+    border-left: 0;
+  }
+
+  label[for="bgc_4"],
+  label[for="bgc_5"],
+  label[for="bgc_6"] {
+    border-top: 0;
+    border-bottom: 0;
+  }
+
+  .container_bgc label:hover {
+    border: 5px solid #f1f1f1;
+  }
+
+  .container_bgc .select {
+    border: 5px solid #f1f1f1;
+    outline: 0;
+  }
+
+  .container_bgc > label:nth-of-type(1),
+  .container_bgc > input:nth-of-type(1) {
+    background-color: #0f4c81;
+    border-radius: 10px 0 0 0;
+  }
+  .container_bgc > label:nth-of-type(2),
+  .container_bgc > input:nth-of-type(2) {
+    background-color: #ff6f61;
+  }
+  .container_bgc > label:nth-of-type(3),
+  .container_bgc > input:nth-of-type(3) {
+    background-color: #5f4b8b;
+    border-radius: 0 10px 0 0;
+  }
+  .container_bgc > label:nth-of-type(4),
+  .container_bgc > input:nth-of-type(4) {
+    background-color: #88b04b;
+  }
+  .container_bgc > label:nth-of-type(5),
+  .container_bgc > input:nth-of-type(5) {
+    background-color: #92a8d1;
+  }
+  .container_bgc > label:nth-of-type(6),
+  .container_bgc > input:nth-of-type(6) {
+    background-color: #f7cac9;
+  }
+  .container_bgc > label:nth-of-type(7),
+  .container_bgc > input:nth-of-type(7) {
+    background-color: #955251;
+    border-radius: 0 0 0 10px;
+  }
+  .container_bgc > label:nth-of-type(8),
+  .container_bgc > input:nth-of-type(8) {
+    background-color: #b163a3;
+  }
+  .container_bgc > label:nth-of-type(9),
+  .container_bgc > input:nth-of-type(9) {
+    background-color: #009473;
+    border-radius: 0 0 10px 0;
+  }
+
+  .item_state button {
+    font-size: 1em;
+    color: #333;
+    background-color: #fff;
+    padding: 10px 15px;
+    border: 1px solid #242424;
+    border-radius: 5px;
+    margin-right: 5px;
+    transition: 0.2s;
+  }
+
+  .item_state button:hover {
+    background-color: rgb(170, 170, 170);
+  }
+
+  .btn_settingClose {
+    font-size: 40px;
+    color: #fff;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: transparent;
+  }
+
+  @media (max-width: 1200px) {
+    #setting {
+      width: 35vw;
+    }
+    p[class$="heading"] {
+      font-size: 20px;
+    }
+    .hoursView_outerToggle {
+      width: 35px;
+    }
+    .isAct .hoursView_innerToggle {
+      transform: translateX(13px);
+    }
+    .item_state button {
+      width: 55px;
+      padding: 10px;
+    }
+  }
+  .a11y_hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    /* position이 absolute일때만 동작, 구형 browser에서 사용 */
+    clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+  }
+  /* 본문 기본설정 */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+    font-weight: normal;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  /* ul 초기화 */
+  ul {
+    padding-left: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+  /* button 초기화 */
+  button {
+    padding: 0;
+    cursor: pointer;
+    border: none;
+  }
+  main {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: auto;
+  }
+}

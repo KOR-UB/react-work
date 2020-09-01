@@ -20,3 +20,4 @@ function ContextSample() {
   );
 }
 export default ContextSample;
+const api_key = "AIzaSyAeYU_lTDahnUk51ZGyA-MZL3pb_K9Cx9Y"

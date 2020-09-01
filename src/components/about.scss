@@ -1,0 +1,63 @@
+.about-body {
+  width: 1000px;
+  margin: 0 auto;
+  section {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .reveal {
+      width: 100%;
+      position: relative;
+      color: #fff;
+      font-size: 2.5em;
+      padding: 0 10px;
+      font-weight: 500;
+      transform-origin: left;
+      transform: scaleX(0);
+      transition: 0.5s;
+      transition-delay: 0.5s;
+    }
+    .reveal::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #e02bff;
+      transform-origin: right;
+      transition: 0.5s;
+      transition-delay: 0s;
+    }
+    .reveal:nth-child(2)::before {
+      background: #ffeb3b;
+    }
+    img {
+      position: relative;
+      left: -200px;
+      display: block;
+      margin-left: 10px;
+      margin-top: 20px;
+      max-width: 300px;
+      opacity: 0;
+      transition: 0.5s;
+    }
+    &.active {
+      img {
+        opacity: 1;
+        left: 0px;
+      }
+      .reveal {
+        transform: scaleX(1);
+        transition-delay: 0;
+      }
+      .reveal::before {
+        transform: scaleX(0);
+        transition-delay: 0.5s;
+      }
+    }
+  }
+}

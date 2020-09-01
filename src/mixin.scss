@@ -70,7 +70,7 @@ $ClassicBlue: #0f4c81;
   height: $height;
 }
 @mixin Anim($duration, $timing, $delay: 0) {
-  $name: loop-#{unique-id()};
+  $name: anim-#{unique-id()};
 
   @keyframes #{$name} {
     @content;

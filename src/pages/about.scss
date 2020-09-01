@@ -1,0 +1,30 @@
+@mixin BgSet($path, $size, $pos: center) {
+  background: url($path);
+  background-size: $size;
+  background-position: $pos;
+  background-repeat: no-repeat;
+}
+@mixin Flex($justify: center, $align: center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+@mixin VirtualFill($pos: absolute) {
+  content: "";
+  position: $pos;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+@mixin Size($width: 100%, $height: 100%) {
+  width: $width;
+  height: $height;
+}
+.about-body {
+  position: absolute;
+  @include Size(100%, 100vh);
+  padding: 30px 45px;
+  background: linear-gradient(15deg, rgb(25, 39, 49) 50%, rgb(20, 27, 37) 0%);
+  color: #fff;
+}

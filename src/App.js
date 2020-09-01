@@ -1,14 +1,15 @@
 import React from "react";
-import {HashRouter, BrowserRouter, Route} from "react-router-dom";
-// import Home from "./routes/Home";
-// import About from "./routes/About";
-// import Detail from "./routes/Detail";
-import Navigation from "./components/Navigation";
-
-import MyHome from "./routes/MyHome";
-import AboutMe from "./routes/AboutMe";
-import Resume from "./routes/Resume";
-import Contact from "./routes/Contact";
+import {HashRouter,  Route} from "react-router-dom";
+import Home from "./pages/Home";
+import Tada from "./pages/Tada";
+import MyNav from "./components/MyNav";
+import Line from "./pages/Line";
+import Starbucks from "./pages/Starbucks";
+import Jnews from "./pages/Jnews";
+import Weather from "./pages/Weather";
+import Todos from "./pages/Todos";
+import Instagram from "./pages/Instagram";
+import Hobby from "./pages/Hobby";
 
 function App() {
   return (
@@ -20,11 +21,16 @@ function App() {
       <Route path="/movie/:id" component={Detail} />
     </HashRouter> */}
       <HashRouter>
-        <Navigation />
-        <Route path="/" exact={true} component={MyHome} />
-        <Route path="/about" component={AboutMe} />
-        <Route path="/resume" component={Resume} />
-        <Route path="/contact" component={Contact} />
+        <MyNav />
+        <Route path="/hobby" component={ Hobby } />
+        <Route path="/instagram" component={ Instagram } />
+        <Route path="/todos" component={ Todos } />
+        <Route path="/weather" component={ Weather } />
+        <Route path="/jnews" component={ Jnews } />
+        <Route path="/starbucks" component={ Starbucks } />
+        <Route path="/line" component={ Line } />
+        <Route path="/tada" component={ Tada } />
+        <Route path="/" exact component={ Home } />
       </HashRouter>
     </>
   );
