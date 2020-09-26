@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/react-work/static/css/main.87099102.chunk.css",
-    "main.js": "/react-work/static/js/main.3d708293.chunk.js",
-    "main.js.map": "/react-work/static/js/main.3d708293.chunk.js.map",
+    "main.css": "/react-work/static/css/main.87279424.chunk.css",
+    "main.js": "/react-work/static/js/main.6977b311.chunk.js",
+    "main.js.map": "/react-work/static/js/main.6977b311.chunk.js.map",
     "runtime-main.js": "/react-work/static/js/runtime-main.3ed38988.js",
     "runtime-main.js.map": "/react-work/static/js/runtime-main.3ed38988.js.map",
-    "static/js/2.1b4e780b.chunk.js": "/react-work/static/js/2.1b4e780b.chunk.js",
-    "static/js/2.1b4e780b.chunk.js.map": "/react-work/static/js/2.1b4e780b.chunk.js.map",
+    "static/js/2.0523ddd4.chunk.js": "/react-work/static/js/2.0523ddd4.chunk.js",
+    "static/js/2.0523ddd4.chunk.js.map": "/react-work/static/js/2.0523ddd4.chunk.js.map",
     "index.html": "/react-work/index.html",
-    "precache-manifest.764ec938163f7176579e4223753f4b35.js": "/react-work/precache-manifest.764ec938163f7176579e4223753f4b35.js",
+    "precache-manifest.1c614a156ae17cf62900f819c1e092f6.js": "/react-work/precache-manifest.1c614a156ae17cf62900f819c1e092f6.js",
     "service-worker.js": "/react-work/service-worker.js",
-    "static/css/main.87099102.chunk.css.map": "/react-work/static/css/main.87099102.chunk.css.map",
-    "static/js/2.1b4e780b.chunk.js.LICENSE.txt": "/react-work/static/js/2.1b4e780b.chunk.js.LICENSE.txt",
+    "static/css/main.87279424.chunk.css.map": "/react-work/static/css/main.87279424.chunk.css.map",
+    "static/js/2.0523ddd4.chunk.js.LICENSE.txt": "/react-work/static/js/2.0523ddd4.chunk.js.LICENSE.txt",
     "static/media/Figcaption.mp4": "/react-work/static/media/Figcaption.ad4be253.mp4",
     "static/media/HTML5_Badge.svg": "/react-work/static/media/HTML5_Badge.f618641c.svg",
+    "static/media/Surfesta.mp4": "/react-work/static/media/Surfesta.0943265a.mp4",
     "static/media/YOONYUBI.jpg": "/react-work/static/media/YOONYUBI.fe4ac138.jpg",
     "static/media/js.svg": "/react-work/static/media/js.d83d916c.svg",
     "static/media/node.svg": "/react-work/static/media/node.bf77ae60.svg",
@@ -23,12 +24,12 @@
     "static/media/tada_feature_03.jpg": "/react-work/static/media/tada_feature_03.5fd6378e.jpg",
     "static/media/tata-basic.jpg": "/react-work/static/media/tata-basic.3e23c11c.jpg",
     "static/media/hobby.scss": "/react-work/static/media/track1.42d39851.jpeg",
-    "static/media/weather-icons-wind.css": "/react-work/static/media/weathericons-regular-webfont.ecaf8b48.svg"
+    "static/media/weather-icons-wind.css": "/react-work/static/media/weathericons-regular-webfont.ed0943f2.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.3ed38988.js",
-    "static/js/2.1b4e780b.chunk.js",
-    "static/css/main.87099102.chunk.css",
-    "static/js/main.3d708293.chunk.js"
+    "static/js/2.0523ddd4.chunk.js",
+    "static/css/main.87279424.chunk.css",
+    "static/js/main.6977b311.chunk.js"
   ]
 }
