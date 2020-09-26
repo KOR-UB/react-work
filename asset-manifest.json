@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react-work/static/css/main.87279424.chunk.css",
+    "main.css": "/react-work/static/css/main.5db25931.chunk.css",
     "main.js": "/react-work/static/js/main.6977b311.chunk.js",
     "main.js.map": "/react-work/static/js/main.6977b311.chunk.js.map",
     "runtime-main.js": "/react-work/static/js/runtime-main.3ed38988.js",
@@ -8,9 +8,9 @@
     "static/js/2.0523ddd4.chunk.js": "/react-work/static/js/2.0523ddd4.chunk.js",
     "static/js/2.0523ddd4.chunk.js.map": "/react-work/static/js/2.0523ddd4.chunk.js.map",
     "index.html": "/react-work/index.html",
-    "precache-manifest.1c614a156ae17cf62900f819c1e092f6.js": "/react-work/precache-manifest.1c614a156ae17cf62900f819c1e092f6.js",
+    "precache-manifest.500bb26701566b2f70657e28320a56de.js": "/react-work/precache-manifest.500bb26701566b2f70657e28320a56de.js",
     "service-worker.js": "/react-work/service-worker.js",
-    "static/css/main.87279424.chunk.css.map": "/react-work/static/css/main.87279424.chunk.css.map",
+    "static/css/main.5db25931.chunk.css.map": "/react-work/static/css/main.5db25931.chunk.css.map",
     "static/js/2.0523ddd4.chunk.js.LICENSE.txt": "/react-work/static/js/2.0523ddd4.chunk.js.LICENSE.txt",
     "static/media/Figcaption.mp4": "/react-work/static/media/Figcaption.ad4be253.mp4",
     "static/media/HTML5_Badge.svg": "/react-work/static/media/HTML5_Badge.f618641c.svg",
@@ -29,7 +29,7 @@
   "entrypoints": [
     "static/js/runtime-main.3ed38988.js",
     "static/js/2.0523ddd4.chunk.js",
-    "static/css/main.87279424.chunk.css",
+    "static/css/main.5db25931.chunk.css",
     "static/js/main.6977b311.chunk.js"
   ]
 }
