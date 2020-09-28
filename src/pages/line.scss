@@ -1,3 +1,4 @@
+@import "../mixin.scss";
 .line-body {
   background: rgb(255, 255, 255);
   header {
@@ -74,10 +75,12 @@
     display: none;
     min-height: 200px;
     background: rgba(235, 235, 235, 0.5);
+    transition: 0.3s ease-in-out;
+    opacity: 0;
   }
   header .nav .nav-menu:hover .nav-itemlist {
-    opacity: 0;
-    animation: test 0.3s linear forwards;
+    opacity: 1;
+    transform: translateY(240px);
     display: flex;
   }
   header .nav .nav-menu a:hover,
@@ -90,18 +93,6 @@
     .plus-item
     a:hover {
     color: rgb(114, 163, 0);
-  }
-  @keyframes test {
-    0% {
-      opacity: 0;
-    }
-    70% {
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(280px);
-      opacity: 1;
-    }
   }
   header .nav .nav-menu .nav-itemlist .itemlist-plus {
     list-style: none;
@@ -221,8 +212,6 @@
   }
   .sec-content span {
     color: gray;
-  }
-  .sec-content small a {
   }
   .lang {
     position: absolute;

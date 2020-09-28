@@ -1,4 +1,5 @@
-.insta-body {
+.insta-body,
+.surfesta-body {
   position: fixed;
   top: 0;
   left: 0;
@@ -16,5 +17,16 @@
     object-fit: cover;
     border: 10px double rgb(199, 199, 199);
     border-radius: 20px;
+  }
+}
+.surfesta-body {
+  position: relative;
+  background: transparent;
+  a {
+    font-size: 2em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 20px;
   }
 }

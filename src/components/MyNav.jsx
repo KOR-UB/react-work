@@ -1,6 +1,5 @@
 import React from "react";
-import {NavLink, Redirect} from "react-router-dom";
-import WeatherComp from "./WeatherComp";
+import { NavLink, Redirect } from "react-router-dom";
 
 function MyNav() {
   const clickHandle = () => {
@@ -8,7 +7,6 @@ function MyNav() {
   };
   return (
     <>
-      <WeatherComp />
       <header className="main-navigation">
         <div className="header-container">
           <nav>
