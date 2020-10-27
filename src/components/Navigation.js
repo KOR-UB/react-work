@@ -1,5 +1,5 @@
-import React, {useRef, useEffect} from "react";
-import {NavLink} from "react-router-dom";
+import React, { useRef, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 
 function Navigation() {
   // useEffect(() => {
@@ -19,7 +19,9 @@ function Navigation() {
     <header>
       <div className="header-container">
         <nav>
-          <NavLink to="/" exact>Home</NavLink>
+          <NavLink to="/" exact>
+            Home
+          </NavLink>
           <NavLink to="/about">About Me</NavLink>
           <NavLink to="/resume">Resume</NavLink>
           <NavLink to="/contact">Contact</NavLink>
